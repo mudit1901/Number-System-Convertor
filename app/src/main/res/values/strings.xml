@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Code Convertor</string>
+
+    <string-array name="input">
+        <item>Decimal</item>
+        <item>Binary</item>
+        <item>Octal</item>
+        <item>Hexadecimal</item>
+    </string-array>
+    <string name="Binary">Binary</string>
+    <string name="Decimal">Decimal</string>
+    <string name="Octal">Octal</string>
+    <string name="Hexadecimal">Hexadecimal</string>
+    <string name="Name">Enter Number Here</string>
+
+
+
+</resources>
+

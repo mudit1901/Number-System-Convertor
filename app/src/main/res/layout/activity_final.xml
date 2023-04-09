@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Final"
+    android:background="#0CBABA"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text=" Number System Convertor"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#E35454"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_35sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="@string/Name"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="@dimen/_15sdp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_20sdp">
+
+
+                <Spinner
+                    android:id="@+id/spineer1"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/black"
+                    android:dropDownSelector="@color/black"
+                    android:entries="@array/input"
+                    android:popupBackground="#B68FFA"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textColorHint="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="54dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/spineer1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.986" />
+
+                <Spinner
+                    android:id="@+id/spineer2"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/border"
+                    android:entries="@array/input"
+                    android:textColor="#040000"
+                    android:textStyle="bold"
+                    android:popupBackground="#B68FFA"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.984" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/butoon1"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:backgroundTint="#ED6B3B"
+                android:text="CONVERT"
+                android:textColor="#3F0E4C"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_30sdp"/>
+
+        </LinearLayout>
+</ScrollView>
+</RelativeLayout>
